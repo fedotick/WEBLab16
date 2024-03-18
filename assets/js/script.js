@@ -71,3 +71,23 @@ function distanta() {
 }
 
 let distance = (x1, y1, x2, y2) => (Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2)));
+
+// 4
+document.getElementById('electricity').addEventListener('input', calculation);
+document.getElementById('heating').addEventListener('input', calculation);
+document.getElementById('gas').addEventListener('input', calculation);
+document.getElementById('internet').addEventListener('input', calculation);
+document.getElementById('phone').addEventListener('input', calculation);
+
+function calculation() {
+    const electricity = +document.getElementById('electricity').value;
+    const heating = +document.getElementById('heating').value;
+    const gas = +document.getElementById('gas').value;
+    const internet = +document.getElementById('internet').value;
+    const phone = +document.getElementById('phone').value;
+
+    const categories = [electricity, heating, gas, internet, phone];
+    const sum = categories.reduce((a, b) => a + b);
+
+    document.getElementById('sum').innerHTML = sum;
+}
