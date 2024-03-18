@@ -53,3 +53,21 @@ let isIsoscelesTriangle = (a, b, c) => (a == b && a != c);
 // let isRightTriangle = (a, b, c) => (a * a + b * b == c * c);
 // let isAcuteTriangle = (a, b, c) => (a * a + b * b > c * c);
 // let isObtuseTriangle = (a, b, c) => (a * a + b * b < c * c);
+
+// 3
+document.getElementById('x1').addEventListener('input',  distanta);
+document.getElementById('y1').addEventListener('input',  distanta);
+document.getElementById('x2').addEventListener('input',  distanta);
+document.getElementById('y2').addEventListener('input',  distanta);
+
+function distanta() {
+    const x1 = document.getElementById('x1').value;
+    const y1 = document.getElementById('y1').value;
+    const x2 = document.getElementById('x2').value;
+    const y2 = document.getElementById('y2').value;
+
+    if (x1 == "" || y1 == "" || x2 == "" || y2 == "") document.getElementById('distance').innerHTML = ""
+    else document.getElementById('distance').innerHTML = distance(x1, y1, x2, y2);
+}
+
+let distance = (x1, y1, x2, y2) => (Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2)));
