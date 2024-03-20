@@ -39,10 +39,10 @@ function triangle() {
     }
     
     const p = (a + b + c) / 2;
-    let kind = "Произвольный"; 
+    let kind = "Arbitrary"; 
 
-    if (isEquilateralTriangle(a, b, c)) kind = "Равносторонний"
-    else if (isIsoscelesTriangle(a, b, c) || isIsoscelesTriangle(b, c, a) || isIsoscelesTriangle(c, a, b)) kind = "Равнобедренный";
+    if (isEquilateralTriangle(a, b, c)) kind = "Equilateral"
+    else if (isIsoscelesTriangle(a, b, c) || isIsoscelesTriangle(b, c, a) || isIsoscelesTriangle(c, a, b)) kind = "Isosceles";
 
     document.getElementById('perimeter').value = a + b + c;
     document.getElementById('area').value = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2);
