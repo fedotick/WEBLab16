@@ -12,127 +12,134 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="tasks">
-        <div class="task">
-            <div class="task-section">
-                <div class="section">
-                    <div class="caption">
-                        <h2>Input data</h2>
-                        <!-- <span class="material-symbols-outlined span">warning</span> -->
-                    </div>
-                    <div class="fields">
-                        <input type="number" name="inputData" id="inputData" placeholder="enter nuber">
-                    </div>
-                </div>
-                <div class="section">  
-                    <div class="caption">
-                        <h2>Encrypted data</h2>
-                    </div>
-                    <div class="fields">
-                        <input type="text" name="encryptedData" id="encryptedData" placeholder="¯\_(ツ)_/¯" readonly>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="line"></div>
-            <div class="task-section">
-                
-            </div> -->
+    <div style="margin: 0;">
+        <div class="buttons">
+            <button class="active">Task 1</button>
+            <button>Task 2</button>
+            <button>Task 3</button>
+            <button>Task 4</button>
         </div>
-
-        <div class="task" style="display: none;">
-            <div class="task-section">
-                <div class="section">
-                    <div class="caption">
-                        <h2>Triangle</h2>
-                        <!-- <span class="material-symbols-outlined span">warning</span> -->
-                    </div>
-                    <div class="fields">
-                        <input type="number" name="a" id="a" placeholder="side a">
-                        <input type="number" name="b" id="b" placeholder="side b">
-                        <input type="number" name="c" id="c" placeholder="side c">
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="caption">
-                        <h2>Calculations</h2>
-                    </div>
-                    <div class="fields">
-                        <input type="number" name="perimeter" id="perimeter" readonly>
-                        <input type="number" name="area" id="area" readonly>
-                        <input type="text" name="kind" id="kind" readonly>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="line"></div>
-            <div class="task-section">
-
-            </div> -->
-        </div>
-
-        <div class="task" style="display: none;">
-            <div class="task-section">
-                <div class="section">
-                    <div class="caption">
-                        <h2>Coordinates</h2>
-                        <!-- <span class="material-symbols-outlined span">warning</span> -->
-                    </div>
-                    <div class="fields">
-                        <div class="fields-section">
-                            <input type="number" name="x1" id="x1" placeholder="x&#8321;">
-                            <input type="number" name="x2" id="x2"" placeholder="x&#8322;">
+        <div class="tasks">
+            <div class="task">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Input data</h2>
+                            <!-- <span class="material-symbols-outlined span">warning</span> -->
                         </div>
-                        <div class="fields-section">
-                            <input type="number" name="y1" id="y1" placeholder="y&#8321;">
-                            <input type="number" name="y2" id="y2" placeholder="y&#8322;">
+                        <div class="fields">
+                            <input type="number" name="inputData" id="inputData" placeholder="enter nuber">
+                        </div>
+                    </div>
+                    <div class="section">  
+                        <div class="caption">
+                            <h2>Encrypted data</h2>
+                        </div>
+                        <div class="fields">
+                            <input type="text" name="encryptedData" id="encryptedData" placeholder="¯\_(ツ)_/¯" readonly>
                         </div>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="caption">
-                        <h2>Distance</h2>
-                    </div>
-                    <div class="fields">
-                        <input type="number" name="distance" id="distance" placeholder="¯\_(ツ)_/¯" readonly>
-                    </div>
-                </div>
+                <!-- <div class="line"></div>
+                <div class="task-section">
+                    
+                </div> -->
             </div>
-            <!-- <div class="line"></div>
-            <div class="task-section">
-                
-            </div> -->
-        </div>
 
-        <div class="task" style="display: none;">
-            <div class="task-section">
-                <div class="section">
-                    <div class="caption">
-                        <h2>Services</h2>
-                        <!-- <span class="material-symbols-outlined span">warning</span> -->
+            <div class="task" style="display: none;">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Triangle</h2>
+                            <!-- <span class="material-symbols-outlined span">warning</span> -->
+                        </div>
+                        <div class="fields">
+                            <input type="number" name="a" id="a" placeholder="side a">
+                            <input type="number" name="b" id="b" placeholder="side b">
+                            <input type="number" name="c" id="c" placeholder="side c">
+                        </div>
                     </div>
-                    <div class="fields">
-                        <input type="number" name="electricity" id="electricity" placeholder="electricity">
-                        <input type="number" name="heating" id="heating" placeholder="heating">
-                        <input type="number" name="gas" id="gas" placeholder="gas">
-                        <input type="number" name="internet" id="internet" placeholder="internet">
-                        <input type="number" name="phone" id="phone" placeholder="phone">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Calculations</h2>
+                        </div>
+                        <div class="fields">
+                            <input type="number" name="perimeter" id="perimeter" readonly>
+                            <input type="number" name="area" id="area" readonly>
+                            <input type="text" name="kind" id="kind" readonly>
+                        </div>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="caption">
-                        <h2>Total</h2>
-                    </div>
-                    <div class="fields">
-                        <input type="number" name="sum" id="sum" placeholder="0" readonly>
-                    </div>
-                </div>
+                <!-- <div class="line"></div>
+                <div class="task-section">
+
+                </div> -->
             </div>
-            <!-- <div class="line"></div>
-            <div class="task-section">
-                
-            </div> -->
+
+            <div class="task" style="display: none;">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Coordinates</h2>
+                            <!-- <span class="material-symbols-outlined span">warning</span> -->
+                        </div>
+                        <div class="fields">
+                            <div class="fields-section">
+                                <input type="number" name="x1" id="x1" placeholder="x&#8321;">
+                                <input type="number" name="x2" id="x2"" placeholder="x&#8322;">
+                            </div>
+                            <div class="fields-section">
+                                <input type="number" name="y1" id="y1" placeholder="y&#8321;">
+                                <input type="number" name="y2" id="y2" placeholder="y&#8322;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Distance</h2>
+                        </div>
+                        <div class="fields">
+                            <input type="number" name="distance" id="distance" placeholder="¯\_(ツ)_/¯" readonly>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="line"></div>
+                <div class="task-section">
+                    
+                </div> -->
+            </div>
+
+            <div class="task" style="display: none;">
+                <div class="task-section">
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Services</h2>
+                            <!-- <span class="material-symbols-outlined span">warning</span> -->
+                        </div>
+                        <div class="fields">
+                            <input type="number" name="electricity" id="electricity" placeholder="electricity">
+                            <input type="number" name="heating" id="heating" placeholder="heating">
+                            <input type="number" name="gas" id="gas" placeholder="gas">
+                            <input type="number" name="internet" id="internet" placeholder="internet">
+                            <input type="number" name="phone" id="phone" placeholder="phone">
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="caption">
+                            <h2>Total</h2>
+                        </div>
+                        <div class="fields">
+                            <input type="number" name="sum" id="sum" placeholder="0" readonly>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="line"></div>
+                <div class="task-section">
+                    
+                </div> -->
+            </div>
         </div>
     </div>
-    
     <script src="assets/js/script.js"></script>
 </body>
 </html>
