@@ -1,8 +1,14 @@
 // 1
-function encryptData(number) {
+document.getElementById('inputData').addEventListener('input',  encryptData);
+
+function encryptData() {
+    const number = document.getElementById('inputData').value;
     let numbers = numToArr(number);
 
-    if (numbers.length != 4) return "Упс! Возможно вы ввели не 4-х значное число";
+    if (numbers.length != 4) {
+        document.getElementById('encryptedData').innerHTML = "";
+        return;
+    }
     
     for(let i = 0; i < numbers.length; i++) {
         numbers[i] = (parseInt(numbers[i]) + 7) % 10;
@@ -10,12 +16,10 @@ function encryptData(number) {
 
     [numbers[0], numbers[2]] = [numbers[2], numbers[0]]
 
-    return numbers.join('');
+    document.getElementById('encryptedData').innerHTML = numbers.join('');
 }
 
 let numToArr = (n) => String(n).split('');
-
-alert(encryptData(1234));
 
 // 2
 document.getElementById('a').addEventListener('input',  triangle);
