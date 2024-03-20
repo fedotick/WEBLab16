@@ -6,7 +6,7 @@ function encryptData() {
     let numbers = numToArr(number);
 
     if (numbers.length != 4) {
-        document.getElementById('encryptedData').innerHTML = "";
+        document.getElementById('encryptedData').value = "";
         return;
     }
     
@@ -16,7 +16,7 @@ function encryptData() {
 
     [numbers[0], numbers[2]] = [numbers[2], numbers[0]]
 
-    document.getElementById('encryptedData').innerHTML = numbers.join('');
+    document.getElementById('encryptedData').value = numbers.join('');
 }
 
 let numToArr = (n) => String(n).split('');
@@ -32,9 +32,9 @@ function triangle() {
     const c = +document.getElementById('c').value;
 
     if (!isTriangle(a, b, c)) {
-        document.getElementById('perimeter').innerHTML = "";
-        document.getElementById('area').innerHTML = "";
-        document.getElementById('kind').innerHTML = "";
+        document.getElementById('perimeter').value = "";
+        document.getElementById('area').value = "";
+        document.getElementById('kind').value = "";
         return;
     }
     
@@ -44,9 +44,9 @@ function triangle() {
     if (isEquilateralTriangle(a, b, c)) kind = "Равносторонний"
     else if (isIsoscelesTriangle(a, b, c) || isIsoscelesTriangle(b, c, a) || isIsoscelesTriangle(c, a, b)) kind = "Равнобедренный";
 
-    document.getElementById('perimeter').innerHTML = a + b + c;
-    document.getElementById('area').innerHTML = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2);
-    document.getElementById('kind').innerHTML = kind;
+    document.getElementById('perimeter').value = a + b + c;
+    document.getElementById('area').value = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2);
+    document.getElementById('kind').value = kind;
 }
 
 let isTriangle = (a, b, c) => (a + b > c && a + c > b && b + c > a);
@@ -70,8 +70,8 @@ function distanta() {
     const x2 = document.getElementById('x2').value;
     const y2 = document.getElementById('y2').value;
 
-    if (x1 == "" || y1 == "" || x2 == "" || y2 == "") document.getElementById('distance').innerHTML = ""
-    else document.getElementById('distance').innerHTML = distance(x1, y1, x2, y2);
+    if (x1 == "" || y1 == "" || x2 == "" || y2 == "") document.getElementById('distance').value = ""
+    else document.getElementById('distance').value = distance(x1, y1, x2, y2);
 }
 
 let distance = (x1, y1, x2, y2) => (Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2)));
@@ -90,8 +90,8 @@ function calculation() {
     const internet = +document.getElementById('internet').value;
     const phone = +document.getElementById('phone').value;
 
-    const categories = [electricity, heating, gas, internet, phone];
-    const sum = categories.reduce((a, b) => a + b);
+    const services = [electricity, heating, gas, internet, phone];
+    const sum = services.reduce((a, b) => a + b);
 
-    document.getElementById('sum').innerHTML = sum;
+    document.getElementById('sum').value = sum;
 }

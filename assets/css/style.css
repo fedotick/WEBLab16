@@ -1,0 +1,98 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000000;
+    color: #F5F5F5;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.tasks {
+    position: relative;
+    width: 31.25vw;
+    height: 31.25vw;
+    box-sizing: border-box;
+    border: 0.05vw solid #F5F5F5;
+}
+
+.task {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.task-section {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.60vw;
+    padding: 2.60vw;
+}
+
+.section {
+    width: 100%;
+}
+
+/* .line {
+    width: 0.05vw;
+    height: 26.04vw;
+    margin: auto;
+} */
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+h2,
+.caption span {
+    font-size: 1.67vw;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.caption span {
+    font-weight: 200;
+}
+
+.fields,
+.fields-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.fields-section {
+    flex: 1;
+}
+
+input {
+    width: 100%;
+    font-size: 1.25vw;
+    color: #F5F5F5;
+    background-color: transparent;
+    padding-bottom: 0.2vw;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 0.05vw solid #F5F5F5;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    display: none;
+}
