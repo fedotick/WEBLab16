@@ -95,3 +95,24 @@ function calculation() {
 
     document.getElementById('sum').value = sum;
 }
+
+for (let i = 1; i <= 4; i++) {
+    document.getElementById("btnTask" + i).onclick = function() {
+        deactivateButtons();
+        hideTasks();
+        this.className = "active";
+        document.getElementById("task" + i).style.display = "flex";
+    }
+}
+
+function deactivateButtons() {
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById("btnTask" + i).className = "";
+    }
+}
+
+function hideTasks() {
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById("task" + i).style.display = "none";
+    }
+}
